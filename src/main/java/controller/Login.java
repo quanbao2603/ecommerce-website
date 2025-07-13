@@ -61,7 +61,7 @@ public class Login extends HttpServlet {
 		if (user_check != null) {
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user_check);
-			url = "/demo_thanhcong.jsp";
+			url = "/Homepage.jsp";
 		} else {
 			request.setAttribute("baoLoi", "Tên đăng nhập hoặc mật khẩu không đúng!");
 			url = "/dangnhap.jsp";

@@ -43,7 +43,7 @@ String url = request.getScheme() + "://" + request.getServerName() + ":" + reque
 			<button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Đăng
 				ký</button>
 			<span>Bạn đã có tài khoản? </span>
-			<a href="login.jsp">Đăng nhập</a>
+			<a href="Login.jsp">Đăng nhập</a>
 			<p class="mt-5 mb-3 text-muted">&copy; 2020–2025</p>
 		</form>
 	</main>

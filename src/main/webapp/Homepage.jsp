@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>DONE</title>
+<title>Home Page</title>
 </head>
 <body>
-<h1><strong>ĐĂNG NHẬP THÀNH CÔNG</strong></h1>
+<h1><strong>trang chủ chính</strong></h1>
 </body>
 </html>
