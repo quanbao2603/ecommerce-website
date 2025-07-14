@@ -46,26 +46,25 @@ public class Login extends HttpServlet {
 			throws ServletException, IOException {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
+		
 		request.setAttribute("username", username);
 		request.setAttribute("password", password);
-
 		String url = "";
-
+		String error ="";
 		User user = new User();
 		user.setUsername(username);
 		user.setPassword(password);
-
 		userDAO userDAO = new userDAO();
-		User user_check = userDAO.check_account(user);
-
-		if (user_check != null) {
-			HttpSession session = request.getSession();
-			session.setAttribute("user", user_check);
+		
+		boolean CheckAccount = userDAO.CheckAccount(user);
+		if (CheckAccount) {
 			url = "/Homepage.jsp";
 		} else {
-			request.setAttribute("baoLoi", "Tên đăng nhập hoặc mật khẩu không đúng!");
-			url = "/dangnhap.jsp";
+			error ="Tên đăng nhập hoặc mật khẩu sai";
+			request.setAttribute("error", error);
+			url = "/auth/Login.jsp";
 		}
+		
 		RequestDispatcher rd = getServletContext().getRequestDispatcher(url);
 		rd.forward(request, response);
 	}

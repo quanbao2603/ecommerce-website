@@ -22,28 +22,37 @@ String url = request.getScheme() + "://" + request.getServerName() + ":" + reque
 </head>
 <body>
 	<main class="form-register w-100 m-auto">
-		<form class="text-center" action="<%=url %>/register" method="POST">
+		<form class="text-center" action="<%=url%>/register" method="POST">
 			<img class="mb-4" src="<%=url%>/img/logo/logo.png" alt="" width="72">
 			<h1 class="h3 mb-3 fw-normal">ĐĂNG KÝ</h1>
+			<% String error = (String) request.getAttribute("error"); %>
+			<% if (error != null && !error.isEmpty()) { %>
+			<div class="alert alert-danger" role="alert">
+				<%= error %>
+			</div>
+			<% } %>
 			<div class="form-floating">
-				<input type="text" class="form-control" id="tenDangNhap"
-					placeholder="Tên đăng nhập" name="tenDangNhap"> <label
-					for="tenDangNhap">Tên đăng ký</label>
+				<input type="text" class="form-control" id="username"
+					name="username" placeholder="Tên đăng nhập" required="required"> <label
+					for="username">Tên đăng ký</label>
 			</div>
 			<div class="form-floating">
-				<input type="password" class="form-control" id="matKhau"
-					placeholder="Mật khẩu" name="matKhau"> <label for="matKhau">Mật
-					khẩu</label>
+				<input type="password" class="form-control" id="password"
+					name="password" placeholder="Mật khẩu" required="required"> <label
+					for="password">Mậtkhẩu</label>
 			</div>
 			<div class="form-floating mb-4">
-				<input type="password" class="form-control" id="nhaplaimatKhau"
-					placeholder="Nhập lại mật khẩu" name="nhaplaimatKhau"> <label for="nhaplaimatKhau">Nhập lại mật
-					khẩu</label>
+				<input type="password" class="form-control" id="re-password"
+					name="re-password" placeholder="Nhập lại mật khẩu" required="required"> <label
+					for="re-password">Nhập lại mật khẩu</label>
+			</div>
+			<div class="form-floating mb-4	">
+				<input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required"> 
+				<label for="email">Email</label>
 			</div>
 			<button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Đăng
 				ký</button>
-			<span>Bạn đã có tài khoản? </span>
-			<a href="Login.jsp">Đăng nhập</a>
+			<span>Bạn đã có tài khoản? </span> <a href="Login.jsp">Đăng nhập</a>
 			<p class="mt-5 mb-3 text-muted">&copy; 2020–2025</p>
 		</form>
 	</main>
