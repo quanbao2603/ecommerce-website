@@ -5,15 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>WOMTECH - Register</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
-	rel="stylesheet">
-<script
-	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-	integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-	crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/Register.css">
 <%
 String url = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 		+ request.getContextPath();
@@ -53,8 +46,15 @@ String url = request.getScheme() + "://" + request.getServerName() + ":" + reque
 			<button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Đăng
 				ký</button>
 			<span>Bạn đã có tài khoản? </span> <a href="Login.jsp">Đăng nhập</a>
-			<p class="mt-5 mb-3 text-muted">&copy; 2020–2025</p>
+			<p class="mt-5 mb-3 text-muted">&copy;2025 WomTechShop. All rights reserved.</p>
 		</form>
 	</main>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+		integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+		crossorigin="anonymous">
+	</script>
 </body>
 </html>
