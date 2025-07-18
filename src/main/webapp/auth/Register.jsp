@@ -30,18 +30,18 @@ String url = request.getScheme() + "://" + request.getServerName() + ":" + reque
 					for="username">Tên đăng ký</label>
 			</div>
 			<div class="form-floating">
+				<input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required"> 
+				<label for="email">Email</label>
+			</div>
+			<div class="form-floating">
 				<input type="password" class="form-control" id="password"
 					name="password" placeholder="Mật khẩu" required="required"> <label
-					for="password">Mậtkhẩu</label>
+					for="password">Mật khẩu</label>
 			</div>
 			<div class="form-floating mb-4">
 				<input type="password" class="form-control" id="re-password"
 					name="re-password" placeholder="Nhập lại mật khẩu" required="required"> <label
 					for="re-password">Nhập lại mật khẩu</label>
-			</div>
-			<div class="form-floating mb-4	">
-				<input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required"> 
-				<label for="email">Email</label>
 			</div>
 			<button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Đăng
 				ký</button>
