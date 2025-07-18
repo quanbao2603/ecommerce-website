@@ -7,9 +7,13 @@ body {
 }
 
 .contact-content {
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
 }
 
 h2 {
