@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.contact-content {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+em {
+    color: #6c757d;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Vùng nội dung chính */
+.about-content {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Tiêu đề */
+.about-content h2 {
+    color: #0d6efd;
+}
+
+/* Sub-heading */
+.about-content h4,
+.about-content h5 {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Danh sách gạch đầu dòng */
+.about-content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.about-content ul li {
+    margin-bottom: 8px;
+}
+
+/* Đoạn văn bản */
+.about-content p {
+    margin-bottom: 12px;
+}
